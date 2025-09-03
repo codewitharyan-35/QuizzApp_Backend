@@ -4,7 +4,7 @@ const quizRouter = express.Router();
 
 quizRouter.route('/')
     .get((req, res) => {
-        res.send(quizzes.data);
+        res.json(quizzes.data);
     })
 
 module.exports = quizRouter;
